@@ -1,3 +1,4 @@
+using EC2.ProductsAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EC2.ProductsAPI.Controllers;
@@ -19,7 +20,7 @@ public class ProductsController: ControllerBase
     }
 
     [HttpPost]
-    public IActionResult Create()
+    public IActionResult Create(ProductCreate model)
     {
         return Ok();
     }
